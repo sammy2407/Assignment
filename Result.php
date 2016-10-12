@@ -119,7 +119,7 @@ $('#chart-2').jqBarGraph({ data: arrayOfData2, title: '<h3>Simple Bar Graph</h3>
 
 <script type="text/javascript">
     document.getElementById("myButton").onclick = function () {
-	alert("hi");
+	alert("Database Updated");
        var obj;
 	if (window.XMLHttpRequest)
 	{
