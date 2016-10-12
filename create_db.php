@@ -24,9 +24,9 @@ Class Stack
 	{
 		
 		$servername = "localhost";
-		$username = "giftonde_god123";
-		$password = "delivery";
-		$db = "giftonde_god";
+		$username = "project1";
+		$password = "project123";
+		$db = "project";
 
 
 		// Create connection
