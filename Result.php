@@ -9,38 +9,10 @@
 
  </head>
  <body>
- <!--
-<div id="jquery-script-menu">
-<div class="jquery-script-center">
-<ul>
-<li><a href="http://www.jqueryscript.net/chart-graph/Animated-Bar-Diagram-Plugin-with-jQuery-barGraph.html">Download This Plugin</a></li>
-<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
-</ul>
-<div class="jquery-script-ads"><script type="text/javascript"><!--
-google_ad_client = "ca-pub-2783044520727903";
-/* jQuery_demo */
-google_ad_slot = "2780937993";
-google_ad_width = 728;
-google_ad_height = 90;
-//
-</script>
-<script type="text/javascript"
-src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script></div>
-<div class="jquery-script-clear"></div>
-</div>
-</div>
--->
+ 
 <div class="container">
 <h1 style="margin-top:150px;" class="text-center">Stack-Overflow Top 50 Tags</h1>
 <div class="row">
-<!--
-<div class="col-lg-6">
- <div id="chart-1"></div> 
-</div><div class="col-lg-6">
- <div id="chart-2"></div> 
-</div><div class="col-lg-6">
--->
  <div id="chart-3"></div> 
  <div id="try"></div>
 </div>
@@ -60,7 +32,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 		obj=new XMLHttpRequest();
 	}
 	else
-	{// code for IE6, IE5
+	{
 		obj=new ActiveXObject("Microsoft.XMLHTTP");
 	}
 	obj.onreadystatechange=function()
@@ -72,11 +44,10 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 			
 			jason=obj.responseText;
 			c = JSON.parse(jason);
-			//document.getElementById("try").innerHTML=c[0][0];
+			
 			
 			for (i = 0; i < c.length; i++)
 			{
-			//document.getElementById("try").innerHTML += c[i][0] + "<br>";
 				var x = parseInt(c[i][1]);
 				var y = parseInt(c[i][2]);
 				var z = parseInt((y/x)*100);
@@ -89,27 +60,10 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 				
 			arrayOfData1[i]=new Array(array[i],c[i][0]+'('+z+'%)');
 			
-			//document.getElementById("try").innerHTML += arrayOfData1[i][0]+"  "+arrayOfData1[i][1]+"<br>";
-			
 			}
 			console.log(arrayOfData1);
 
-			//for (i = 0; i < c.length/5; i++){
-				//for (j = 0; j < c.length/5; j++){
-					//for (k = 0; k < c.length/5; k++){
-					//console.log(arrayOfData1[i][j][k]);
-			//}
-		//}
-	//}
-
-// 			 arrayOfData11 = new Array([[1231698,153189],"php"],
-// [[1231698,153189],"javascript"],
-// [[1147140,142615],"java"],
-// [[1010969,110614],"c#"],
-// [[1010969,110614],"c++"]
-
-// );	
-//alert(arrayOfData1[0][0]);
+	
 			$('#chart-3').jqBarGraph({data: arrayOfData1,
 			colors: ['#3D0017','#6B0E1D','#AB2522'],
 			legends: ['Total Asked Questions','Unanswered Questions'],
