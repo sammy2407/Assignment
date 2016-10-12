@@ -24,7 +24,7 @@
 		$array = array();
 		while ($row)
 		{
-			$val=array ($row[1],$row[2],$row[3],$row[4]); 
+			$val=array ($row[1],$row[2],$row[3]); 
 			$array[$i] = $val;
 			$row=mysqli_fetch_array($fetch);
 			$i++;
