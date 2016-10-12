@@ -115,7 +115,7 @@ $('#chart-2').jqBarGraph({ data: arrayOfData2, title: '<h3>Simple Bar Graph</h3>
 
 </script>
 <hr>
-<button id="myButton" class="" >Refresh Database</button>
+<button id="myButton" class="" >Update Database</button>
 
 <script type="text/javascript">
     document.getElementById("myButton").onclick = function () {
